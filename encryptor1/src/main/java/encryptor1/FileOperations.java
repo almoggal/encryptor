@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class FileOperations {
 
 	
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, InvalidEncryptionKeyException {
 
 		String command, keyPath=null, sourceFile, encryptedFilePath=null, decryptedFilePath;
 		int key, key2;
