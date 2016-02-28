@@ -99,7 +99,23 @@ public class EncryptionAlgorithmTest {
 		actual = doubleAlgo.decrypt(doubleAlgo.encrypt(testChar));
 		
 	}
-
+	
+	@Test
+	public void testInvalidEncryptionKeyException(){
+	
+		boolean thrown=false;
+		
+		try {
+			shiftUpAlgo = new ShiftUpEncryption(-10);
+		} catch (InvalidEncryptionKeyException encryptionKeyException) {
+			thrown = true;
+		} finally {
+			assertEquals(true, thrown);
+			testChar = actual; // for the method @after to pass
+		}
+	
+	}
+	
 	@Test
 	public void testEncryptionComparatorLessThan() {
 	
