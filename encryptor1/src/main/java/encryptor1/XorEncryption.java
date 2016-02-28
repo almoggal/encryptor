@@ -6,7 +6,7 @@ public class XorEncryption extends EncryptionAlgorithmWithKey {
 	 * Constructs an encryption algorithm that uses
 	 * xor operation.
 	 */
-	public XorEncryption(int key){
+	public XorEncryption(int key) throws InvalidEncryptionKeyException{
 		super(key);
 	}
 
