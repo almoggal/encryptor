@@ -7,7 +7,7 @@ public class ShiftUpEncryption extends EncryptionAlgorithmWithKey {
 		 * Constructs an encryption algorithm that is
 		 * adding the given key.
 		 */
-		public ShiftUpEncryption(int key){
+		public ShiftUpEncryption(int key) throws InvalidEncryptionKeyException{
 			super(key);
 		}
 		
