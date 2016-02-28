@@ -6,7 +6,7 @@ public class ShiftMultiplyEncryption extends EncryptionAlgorithmWithKey {
 	 * Constructs a multiplication by key algorithm
 	 * with the specified key. If key is even, makes it odd.
 	 */
-	public ShiftMultiplyEncryption(int key) {
+	public ShiftMultiplyEncryption(int key) throws InvalidEncryptionKeyException{
 		super(key);
 		//key must be odd.
 		if(key%2==0){
