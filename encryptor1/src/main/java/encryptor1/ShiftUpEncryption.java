@@ -3,7 +3,6 @@ package encryptor1;
 public class ShiftUpEncryption extends EncryptionAlgorithmWithKey {
 
 		private final static int mod=256;
-		private int key;
 		/*
 		 * Constructs an encryption algorithm that is
 		 * adding the given key.
